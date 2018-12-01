@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelperLol"
         mc:Ignorable="d"
-        Title="OrTeamParser" Height="343.581" Width="327.196" Background="#FF4F4A4A" ResizeMode="NoResize">
+        Title="OrTeamParser" Height="343.581" Width="327.196" Background="#FF4F4A4A" ResizeMode="NoResize" Icon="Macaron.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
         <Label Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFF61B1B" FontSize="25" FontWeight="Bold" Foreground="White">OrTeamParser
         </Label>
-        <Label x:Name="Label" Content="Name:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontStretch="Normal"  FontWeight="Bold" Margin="29,25.6,49,9.8" Grid.Row="1" Width="82" Foreground="#FFFFE4E4"/>
+        <Label x:Name="Label" Content="Name:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontStretch="Normal"  FontWeight="Bold" Margin="29,25.6,49,9.8" Grid.Row="1" Width="83" Foreground="#FFFFE4E4"/>
         <Label x:Name="Label_Copy" Content="Key :" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="25" FontStretch="Normal"  FontWeight="Bold" Margin="29,25.2,49,10.2" Grid.Row="2" Width="82" Foreground="#FFFFE4E4"/>
         <TextBox x:Name="textBox1" Grid.Column="1" HorizontalAlignment="Left" Height="43" Margin="10,25.6,0,0" Grid.Row="1" FontSize="25" FontStretch="Medium" VerticalAlignment="Top" Width="141"/>
         <PasswordBox  x:Name="textBox2" Grid.Column="1" HorizontalAlignment="Left" Height="43" Margin="10,25.2,0,0" Grid.Row="2"  FontSize="25" FontStretch="Normal" VerticalAlignment="Top" Width="141" PasswordChar="*"/>

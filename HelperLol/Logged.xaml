@@ -5,19 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelperLol"
         mc:Ignorable="d"
-        Title="Logged" Height="450" Width="655.574" Background="#FF4F4A4A">
+        Title="Logged" Height="450" Width="655.574" Background="#FF4F4A4A" Icon="Macaron.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70*"/>
             <RowDefinition Height="70*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="131*"/>
-            <ColumnDefinition Width="662*"/>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="436*"/>
+            <ColumnDefinition Width="106*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="StartParse" Grid.Column="0" Grid.Row="0" FontSize="20" Background="#FFF63E3E" Click="StartParse_Click" > Start </Button>
-        <Button x:Name="Back" Grid.Column="0" Grid.Row="1" FontSize="20" Background="#FFF63E3E" Click="Back_Click" >Back</Button>
-        <TextBox x:Name ="Input" Grid.Column="1"  TextWrapping="Wrap" AcceptsReturn="True" Background="#FFD6B8B8" ScrollViewer.VerticalScrollBarVisibility="Auto"> </TextBox>
-        <TextBox x:Name ="Output" Grid.Column="1" TextWrapping="Wrap" AcceptsReturn="True" Grid.Row="1" Background="#FFD6B8B8" ScrollViewer.VerticalScrollBarVisibility="Auto"></TextBox>
+        <Button x:Name="StartParse" Grid.Column="0" Grid.Row="0" FontSize="20" Background="#FFF63E3E" Click="StartParse_Click" Margin="0,0,0.2,4.6" >Start</Button>
+        <Button x:Name="Back" Grid.Column="0" Grid.Row="1" FontSize="20" Background="#FFF63E3E" Click="Back_Click" Margin="0,0.4,0.2,0" >Back</Button>
+        <TextBox x:Name ="Input"  TextWrapping="Wrap" AcceptsReturn="True" Background="White" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Column="1"></TextBox>
+       
+
+        <TextBox x:Name ="Output" TextWrapping="Wrap" AcceptsReturn="True" Grid.Row="1" Background="White" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Column="1"/>
+        <Button Grid.Column="2"  Margin="0,0,0.2,4.6"  FontSize="20" Background="#FFF63E3E" Click="Find"  >Delete first</Button>
+        <Button Grid.Column="2"  Margin="0,0.4,0.2,0" FontSize="15" Grid.Row="1"  Background="#FFF63E3E" Click="DeleteSelected" >Delete selected</Button>
     </Grid>
 </Window>
