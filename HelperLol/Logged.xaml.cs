@@ -54,10 +54,10 @@ namespace HelperLol
                                 continue;
                             }
                             var b = item1.Split(new String[] { "\n" }, StringSplitOptions.None);
-                            Input.Text += index.ToString() + ":  " + b[0] + "\n";
+                            Output.Text += index.ToString() + ":  " + b[0] + "\n";
                             index++;
                         }
-                        Input.Text += "-----------------------\n";
+                        Output.Text += "\n-----------------------\n";
                         continue;
                     }
                     try
@@ -106,7 +106,7 @@ namespace HelperLol
                                     //MessageBox.Show(item2.Key + "     " + item2.Value);
                                     if ((item1.Value.Contains(item2.Value) || item2.Value.Contains(item1.Value)) && item1.Key != item2.Key)
                                     {
-                                        Input.Text += item1.Key + "------" + item2.Key + "\n";
+                                        Output.Text += item1.Key + "------" + item2.Key + "\n";
                                     }
                                 }
                             }
@@ -130,7 +130,7 @@ namespace HelperLol
                                 Output.Text += New[0] + "         " + "false" + "\n";
                             }
                         }
-                        Output.Text += "-----------------------------\n";
+                        Output.Text += "\n-----------------------------\n";
                     }
                     catch
                     {

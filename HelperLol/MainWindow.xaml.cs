@@ -29,7 +29,7 @@ namespace HelperLol
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox1.Text == "Smurf" && textBox2.Password== "key")
+            if (textBox1.Text == "Smurf" && textBox2.Password== "Smurf"|| textBox1.Text == "Rostik" && textBox2.Password == "Rostik")
             {
                 Logged logged = new Logged();
                 this.Hide();
